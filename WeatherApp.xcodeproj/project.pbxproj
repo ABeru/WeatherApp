@@ -11,6 +11,8 @@
 		587F58842950865800C87FF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58832950865800C87FF1 /* SceneDelegate.swift */; };
 		587F58862950865800C87FF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58852950865800C87FF1 /* ViewController.swift */; };
 		587F588B2950865900C87FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587F588A2950865900C87FF1 /* Assets.xcassets */; };
+		587F589B29508B1100C87FF1 /* ColorBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F589A29508B1100C87FF1 /* ColorBook.swift */; };
+		587F589D29508E1900C87FF1 /* ImageBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F589C29508E1900C87FF1 /* ImageBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		587F58852950865800C87FF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		587F588A2950865900C87FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587F588F2950865900C87FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587F589A29508B1100C87FF1 /* ColorBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBook.swift; sourceTree = "<group>"; };
+		587F589C29508E1900C87FF1 /* ImageBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		587F58802950865800C87FF1 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				587F588F2950865900C87FF1 /* Info.plist */,
+				587F589729508A9100C87FF1 /* Helpers */,
 				587F58952950892100C87FF1 /* App Control */,
 				587F58962950893600C87FF1 /* Scenes */,
 				587F588A2950865900C87FF1 /* Assets.xcassets */,
@@ -64,7 +70,6 @@
 			children = (
 				587F58832950865800C87FF1 /* SceneDelegate.swift */,
 				587F58812950865800C87FF1 /* AppDelegate.swift */,
-				587F588F2950865900C87FF1 /* Info.plist */,
 			);
 			path = "App Control";
 			sourceTree = "<group>";
@@ -75,6 +80,15 @@
 				587F58852950865800C87FF1 /* ViewController.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		587F589729508A9100C87FF1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				587F589A29508B1100C87FF1 /* ColorBook.swift */,
+				587F589C29508E1900C87FF1 /* ImageBook.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				587F58862950865800C87FF1 /* ViewController.swift in Sources */,
+				587F589B29508B1100C87FF1 /* ColorBook.swift in Sources */,
+				587F589D29508E1900C87FF1 /* ImageBook.swift in Sources */,
 				587F58822950865800C87FF1 /* AppDelegate.swift in Sources */,
 				587F58842950865800C87FF1 /* SceneDelegate.swift in Sources */,
 			);
