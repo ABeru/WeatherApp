@@ -7,23 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582B6B2F295458E4005E9917 /* GetMediaFileNetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2B295458E4005E9917 /* GetMediaFileNetworkGateway.swift */; };
+		582B6B30295458E4005E9917 /* GetMediaFileGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2C295458E4005E9917 /* GetMediaFileGateway.swift */; };
+		582B6B31295458E4005E9917 /* GetMediaFileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2D295458E4005E9917 /* GetMediaFileEntity.swift */; };
+		582B6B32295458E4005E9917 /* GetMediaFileGatewayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2E295458E4005E9917 /* GetMediaFileGatewayParameters.swift */; };
+		582B6B3D2954BFE3005E9917 /* SearchCityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B352954BFE3005E9917 /* SearchCityFactory.swift */; };
+		582B6B3E2954BFE3005E9917 /* SearchCityUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B362954BFE3005E9917 /* SearchCityUIModel.swift */; };
+		582B6B3F2954BFE3005E9917 /* SearchCityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B372954BFE3005E9917 /* SearchCityPresenter.swift */; };
+		582B6B402954BFE3005E9917 /* SearchCityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B382954BFE3005E9917 /* SearchCityRouter.swift */; };
+		582B6B412954BFE3005E9917 /* SearchCityInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B392954BFE3005E9917 /* SearchCityInterface.swift */; };
+		582B6B422954BFE3005E9917 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B3A2954BFE3005E9917 /* SearchCityViewController.swift */; };
+		582B6B432954BFE3005E9917 /* SearchCityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B3B2954BFE3005E9917 /* SearchCityInteractor.swift */; };
+		582B6B442954BFE3005E9917 /* SearchCityParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B3C2954BFE3005E9917 /* SearchCityParameters.swift */; };
+		582B6B462954CDE5005E9917 /* Navigation Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B452954CDE5005E9917 /* Navigation Extension.swift */; };
+		582B6B4B2954E327005E9917 /* CityCountryCellUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B482954E327005E9917 /* CityCountryCellUIModel.swift */; };
+		582B6B4C2954E327005E9917 /* CityCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B492954E327005E9917 /* CityCountryCell.swift */; };
+		582B6B4D2954E327005E9917 /* CityCountryCellParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B4A2954E327005E9917 /* CityCountryCellParameters.swift */; };
+		582B6B522954E648005E9917 /* SearchNetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B4E2954E648005E9917 /* SearchNetworkGateway.swift */; };
+		582B6B532954E648005E9917 /* SearchGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B4F2954E648005E9917 /* SearchGateway.swift */; };
+		582B6B542954E648005E9917 /* SearchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B502954E648005E9917 /* SearchEntity.swift */; };
+		582B6B552954E648005E9917 /* SearchGatewayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B512954E648005E9917 /* SearchGatewayParameters.swift */; };
 		587F58822950865800C87FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58812950865800C87FF1 /* AppDelegate.swift */; };
 		587F58842950865800C87FF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58832950865800C87FF1 /* SceneDelegate.swift */; };
-		587F58862950865800C87FF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58852950865800C87FF1 /* ViewController.swift */; };
 		587F588B2950865900C87FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587F588A2950865900C87FF1 /* Assets.xcassets */; };
 		587F589B29508B1100C87FF1 /* ColorBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F589A29508B1100C87FF1 /* ColorBook.swift */; };
 		587F589D29508E1900C87FF1 /* ImageBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F589C29508E1900C87FF1 /* ImageBook.swift */; };
+		587F58B02951C65A00C87FF1 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58AF2951C65A00C87FF1 /* TableViewExtensions.swift */; };
+		587F58B82951C84400C87FF1 /* HomeHeaderCellUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58B52951C84300C87FF1 /* HomeHeaderCellUIModel.swift */; };
+		587F58B92951C84400C87FF1 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58B62951C84300C87FF1 /* HomeHeaderCell.swift */; };
+		587F58BA2951C84400C87FF1 /* HomeHeaderCellParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58B72951C84300C87FF1 /* HomeHeaderCellParameters.swift */; };
+		587F58C32951C86300C87FF1 /* HomeScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58BB2951C86300C87FF1 /* HomeScreenFactory.swift */; };
+		587F58C42951C86300C87FF1 /* HomeScreenUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58BC2951C86300C87FF1 /* HomeScreenUIModel.swift */; };
+		587F58C52951C86300C87FF1 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58BD2951C86300C87FF1 /* HomeScreenPresenter.swift */; };
+		587F58C62951C86300C87FF1 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58BE2951C86300C87FF1 /* HomeScreenRouter.swift */; };
+		587F58C72951C86300C87FF1 /* HomeScreenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58BF2951C86300C87FF1 /* HomeScreenInterface.swift */; };
+		587F58C82951C86300C87FF1 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58C02951C86300C87FF1 /* HomeScreenViewController.swift */; };
+		587F58C92951C86300C87FF1 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58C12951C86300C87FF1 /* HomeScreenInteractor.swift */; };
+		587F58CA2951C86300C87FF1 /* HomeScreenParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58C22951C86300C87FF1 /* HomeScreenParameters.swift */; };
+		587F58CC2951C92D00C87FF1 /* UIViewMaskConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58CB2951C92D00C87FF1 /* UIViewMaskConstraintsExtension.swift */; };
+		587F58CE2951D7E000C87FF1 /* ConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58CD2951D7E000C87FF1 /* ConstraintsExtension.swift */; };
+		587F58D02951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58CF2951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift */; };
+		587F58DA2951FC0C00C87FF1 /* HourlyForecastViewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58D72951FC0C00C87FF1 /* HourlyForecastViewParameters.swift */; };
+		587F58DB2951FC0C00C87FF1 /* HourlyForecastViewUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58D82951FC0C00C87FF1 /* HourlyForecastViewUIModel.swift */; };
+		587F58DC2951FC0C00C87FF1 /* HourlyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58D92951FC0C00C87FF1 /* HourlyForecastView.swift */; };
+		587F58E22951FEFC00C87FF1 /* HourlyForecastCellUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58DF2951FEFC00C87FF1 /* HourlyForecastCellUIModel.swift */; };
+		587F58E32951FEFC00C87FF1 /* HourlyForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58E02951FEFC00C87FF1 /* HourlyForecastCell.swift */; };
+		587F58E42951FEFC00C87FF1 /* HourlyForecastCellParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58E12951FEFC00C87FF1 /* HourlyForecastCellParameters.swift */; };
+		587F58E62951FFB800C87FF1 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58E52951FFB800C87FF1 /* CollectionViewExtensions.swift */; };
+		587F58EB29521E2F00C87FF1 /* HourlyForecastTableViewCellUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58E829521E2F00C87FF1 /* HourlyForecastTableViewCellUIModel.swift */; };
+		587F58EC29521E2F00C87FF1 /* HourlyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58E929521E2F00C87FF1 /* HourlyForecastTableViewCell.swift */; };
+		587F58ED29521E2F00C87FF1 /* HourlyForecastTableViewCellParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58EA29521E2F00C87FF1 /* HourlyForecastTableViewCellParameters.swift */; };
+		589A56D32952DCB200CA940D /* FutureForecastCellUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A56D02952DCB200CA940D /* FutureForecastCellUIModel.swift */; };
+		589A56D42952DCB200CA940D /* FutureForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A56D12952DCB200CA940D /* FutureForecastCell.swift */; };
+		589A56D52952DCB200CA940D /* FutureForecastCellParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A56D22952DCB200CA940D /* FutureForecastCellParameters.swift */; };
+		589A56E02952F2BE00CA940D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A56DF2952F2BE00CA940D /* Keys.swift */; };
+		589A56E82952F7D500CA940D /* ForecastNetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A56E42952F7D500CA940D /* ForecastNetworkGateway.swift */; };
+		589A56E92952F7D500CA940D /* ForecastGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A56E52952F7D500CA940D /* ForecastGateway.swift */; };
+		589A56EA2952F7D500CA940D /* ForecastEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A56E62952F7D500CA940D /* ForecastEntity.swift */; };
+		589A56EB2952F7D500CA940D /* ForecastGatewayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A56E72952F7D500CA940D /* ForecastGatewayParameters.swift */; };
+		589A56ED295301DB00CA940D /* ActivityIndicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A56EC295301DB00CA940D /* ActivityIndicatorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		582B6B2B295458E4005E9917 /* GetMediaFileNetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileNetworkGateway.swift; sourceTree = "<group>"; };
+		582B6B2C295458E4005E9917 /* GetMediaFileGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileGateway.swift; sourceTree = "<group>"; };
+		582B6B2D295458E4005E9917 /* GetMediaFileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileEntity.swift; sourceTree = "<group>"; };
+		582B6B2E295458E4005E9917 /* GetMediaFileGatewayParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileGatewayParameters.swift; sourceTree = "<group>"; };
+		582B6B352954BFE3005E9917 /* SearchCityFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityFactory.swift; sourceTree = "<group>"; };
+		582B6B362954BFE3005E9917 /* SearchCityUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityUIModel.swift; sourceTree = "<group>"; };
+		582B6B372954BFE3005E9917 /* SearchCityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityPresenter.swift; sourceTree = "<group>"; };
+		582B6B382954BFE3005E9917 /* SearchCityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityRouter.swift; sourceTree = "<group>"; };
+		582B6B392954BFE3005E9917 /* SearchCityInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityInterface.swift; sourceTree = "<group>"; };
+		582B6B3A2954BFE3005E9917 /* SearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewController.swift; sourceTree = "<group>"; };
+		582B6B3B2954BFE3005E9917 /* SearchCityInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityInteractor.swift; sourceTree = "<group>"; };
+		582B6B3C2954BFE3005E9917 /* SearchCityParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityParameters.swift; sourceTree = "<group>"; };
+		582B6B452954CDE5005E9917 /* Navigation Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation Extension.swift"; sourceTree = "<group>"; };
+		582B6B482954E327005E9917 /* CityCountryCellUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCountryCellUIModel.swift; sourceTree = "<group>"; };
+		582B6B492954E327005E9917 /* CityCountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCountryCell.swift; sourceTree = "<group>"; };
+		582B6B4A2954E327005E9917 /* CityCountryCellParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCountryCellParameters.swift; sourceTree = "<group>"; };
+		582B6B4E2954E648005E9917 /* SearchNetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkGateway.swift; sourceTree = "<group>"; };
+		582B6B4F2954E648005E9917 /* SearchGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGateway.swift; sourceTree = "<group>"; };
+		582B6B502954E648005E9917 /* SearchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEntity.swift; sourceTree = "<group>"; };
+		582B6B512954E648005E9917 /* SearchGatewayParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGatewayParameters.swift; sourceTree = "<group>"; };
 		587F587E2950865800C87FF1 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587F58812950865800C87FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		587F58832950865800C87FF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		587F58852950865800C87FF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		587F588A2950865900C87FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587F588F2950865900C87FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587F589A29508B1100C87FF1 /* ColorBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBook.swift; sourceTree = "<group>"; };
 		587F589C29508E1900C87FF1 /* ImageBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBook.swift; sourceTree = "<group>"; };
+		587F58AF2951C65A00C87FF1 /* TableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
+		587F58B52951C84300C87FF1 /* HomeHeaderCellUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCellUIModel.swift; sourceTree = "<group>"; };
+		587F58B62951C84300C87FF1 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
+		587F58B72951C84300C87FF1 /* HomeHeaderCellParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCellParameters.swift; sourceTree = "<group>"; };
+		587F58BB2951C86300C87FF1 /* HomeScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenFactory.swift; sourceTree = "<group>"; };
+		587F58BC2951C86300C87FF1 /* HomeScreenUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenUIModel.swift; sourceTree = "<group>"; };
+		587F58BD2951C86300C87FF1 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
+		587F58BE2951C86300C87FF1 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
+		587F58BF2951C86300C87FF1 /* HomeScreenInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInterface.swift; sourceTree = "<group>"; };
+		587F58C02951C86300C87FF1 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		587F58C12951C86300C87FF1 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
+		587F58C22951C86300C87FF1 /* HomeScreenParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenParameters.swift; sourceTree = "<group>"; };
+		587F58CB2951C92D00C87FF1 /* UIViewMaskConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewMaskConstraintsExtension.swift; sourceTree = "<group>"; };
+		587F58CD2951D7E000C87FF1 /* ConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExtension.swift; sourceTree = "<group>"; };
+		587F58CF2951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.Section.swift; sourceTree = "<group>"; };
+		587F58D72951FC0C00C87FF1 /* HourlyForecastViewParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastViewParameters.swift; sourceTree = "<group>"; };
+		587F58D82951FC0C00C87FF1 /* HourlyForecastViewUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastViewUIModel.swift; sourceTree = "<group>"; };
+		587F58D92951FC0C00C87FF1 /* HourlyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastView.swift; sourceTree = "<group>"; };
+		587F58DF2951FEFC00C87FF1 /* HourlyForecastCellUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCellUIModel.swift; sourceTree = "<group>"; };
+		587F58E02951FEFC00C87FF1 /* HourlyForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCell.swift; sourceTree = "<group>"; };
+		587F58E12951FEFC00C87FF1 /* HourlyForecastCellParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCellParameters.swift; sourceTree = "<group>"; };
+		587F58E52951FFB800C87FF1 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
+		587F58E829521E2F00C87FF1 /* HourlyForecastTableViewCellUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastTableViewCellUIModel.swift; sourceTree = "<group>"; };
+		587F58E929521E2F00C87FF1 /* HourlyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastTableViewCell.swift; sourceTree = "<group>"; };
+		587F58EA29521E2F00C87FF1 /* HourlyForecastTableViewCellParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastTableViewCellParameters.swift; sourceTree = "<group>"; };
+		589A56D02952DCB200CA940D /* FutureForecastCellUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureForecastCellUIModel.swift; sourceTree = "<group>"; };
+		589A56D12952DCB200CA940D /* FutureForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureForecastCell.swift; sourceTree = "<group>"; };
+		589A56D22952DCB200CA940D /* FutureForecastCellParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureForecastCellParameters.swift; sourceTree = "<group>"; };
+		589A56DF2952F2BE00CA940D /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		589A56E42952F7D500CA940D /* ForecastNetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastNetworkGateway.swift; sourceTree = "<group>"; };
+		589A56E52952F7D500CA940D /* ForecastGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastGateway.swift; sourceTree = "<group>"; };
+		589A56E62952F7D500CA940D /* ForecastEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastEntity.swift; sourceTree = "<group>"; };
+		589A56E72952F7D500CA940D /* ForecastGatewayParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastGatewayParameters.swift; sourceTree = "<group>"; };
+		589A56EC295301DB00CA940D /* ActivityIndicatorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +143,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		582B6B2A295458C1005E9917 /* Get Media File Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				582B6B2B295458E4005E9917 /* GetMediaFileNetworkGateway.swift */,
+				582B6B2C295458E4005E9917 /* GetMediaFileGateway.swift */,
+				582B6B2D295458E4005E9917 /* GetMediaFileEntity.swift */,
+				582B6B2E295458E4005E9917 /* GetMediaFileGatewayParameters.swift */,
+			);
+			path = "Get Media File Gateway";
+			sourceTree = "<group>";
+		};
+		582B6B332954BFA1005E9917 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				587F58BB2951C86300C87FF1 /* HomeScreenFactory.swift */,
+				587F58BC2951C86300C87FF1 /* HomeScreenUIModel.swift */,
+				587F58BD2951C86300C87FF1 /* HomeScreenPresenter.swift */,
+				587F58BE2951C86300C87FF1 /* HomeScreenRouter.swift */,
+				587F58BF2951C86300C87FF1 /* HomeScreenInterface.swift */,
+				587F58C02951C86300C87FF1 /* HomeScreenViewController.swift */,
+				587F58C12951C86300C87FF1 /* HomeScreenInteractor.swift */,
+				587F58C22951C86300C87FF1 /* HomeScreenParameters.swift */,
+				587F58CF2951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		582B6B342954BFBB005E9917 /* Search City */ = {
+			isa = PBXGroup;
+			children = (
+				582B6B352954BFE3005E9917 /* SearchCityFactory.swift */,
+				582B6B362954BFE3005E9917 /* SearchCityUIModel.swift */,
+				582B6B372954BFE3005E9917 /* SearchCityPresenter.swift */,
+				582B6B382954BFE3005E9917 /* SearchCityRouter.swift */,
+				582B6B392954BFE3005E9917 /* SearchCityInterface.swift */,
+				582B6B3A2954BFE3005E9917 /* SearchCityViewController.swift */,
+				582B6B3B2954BFE3005E9917 /* SearchCityInteractor.swift */,
+				582B6B3C2954BFE3005E9917 /* SearchCityParameters.swift */,
+			);
+			path = "Search City";
+			sourceTree = "<group>";
+		};
+		582B6B472954E30F005E9917 /* City Country */ = {
+			isa = PBXGroup;
+			children = (
+				582B6B482954E327005E9917 /* CityCountryCellUIModel.swift */,
+				582B6B492954E327005E9917 /* CityCountryCell.swift */,
+				582B6B4A2954E327005E9917 /* CityCountryCellParameters.swift */,
+			);
+			path = "City Country";
+			sourceTree = "<group>";
+		};
 		587F58752950865800C87FF1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +214,10 @@
 		587F58802950865800C87FF1 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				589A56E12952F79F00CA940D /* Gateways */,
+				589A56DD2952F2A500CA940D /* Models */,
+				587F58B12951C7C700C87FF1 /* Views */,
+				587F58AE2951C63B00C87FF1 /* Extensions */,
 				587F588F2950865900C87FF1 /* Info.plist */,
 				587F589729508A9100C87FF1 /* Helpers */,
 				587F58952950892100C87FF1 /* App Control */,
@@ -77,7 +239,8 @@
 		587F58962950893600C87FF1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				587F58852950865800C87FF1 /* ViewController.swift */,
+				582B6B332954BFA1005E9917 /* Home Screen */,
+				582B6B342954BFBB005E9917 /* Search City */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -89,6 +252,138 @@
 				587F589C29508E1900C87FF1 /* ImageBook.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		587F58AE2951C63B00C87FF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				587F58AF2951C65A00C87FF1 /* TableViewExtensions.swift */,
+				587F58CB2951C92D00C87FF1 /* UIViewMaskConstraintsExtension.swift */,
+				587F58CD2951D7E000C87FF1 /* ConstraintsExtension.swift */,
+				587F58E52951FFB800C87FF1 /* CollectionViewExtensions.swift */,
+				589A56EC295301DB00CA940D /* ActivityIndicatorExtension.swift */,
+				582B6B452954CDE5005E9917 /* Navigation Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		587F58B12951C7C700C87FF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				587F58D62951FB9F00C87FF1 /* Subviews */,
+				587F58B22951C7EB00C87FF1 /* Table View Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		587F58B22951C7EB00C87FF1 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				582B6B472954E30F005E9917 /* City Country */,
+				589A56CF2952DC9700CA940D /* Future Forecast */,
+				587F58E729521E1B00C87FF1 /* Hourly Forecast */,
+				587F58D32951FA4B00C87FF1 /* Home Header */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		587F58D32951FA4B00C87FF1 /* Home Header */ = {
+			isa = PBXGroup;
+			children = (
+				587F58B52951C84300C87FF1 /* HomeHeaderCellUIModel.swift */,
+				587F58B62951C84300C87FF1 /* HomeHeaderCell.swift */,
+				587F58B72951C84300C87FF1 /* HomeHeaderCellParameters.swift */,
+			);
+			path = "Home Header";
+			sourceTree = "<group>";
+		};
+		587F58D62951FB9F00C87FF1 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				587F58DD2951FEBA00C87FF1 /* Hourly Forecast */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		587F58DD2951FEBA00C87FF1 /* Hourly Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				587F58DE2951FED800C87FF1 /* Hourly Forecast Item Cell */,
+				587F58D72951FC0C00C87FF1 /* HourlyForecastViewParameters.swift */,
+				587F58D82951FC0C00C87FF1 /* HourlyForecastViewUIModel.swift */,
+				587F58D92951FC0C00C87FF1 /* HourlyForecastView.swift */,
+			);
+			path = "Hourly Forecast";
+			sourceTree = "<group>";
+		};
+		587F58DE2951FED800C87FF1 /* Hourly Forecast Item Cell */ = {
+			isa = PBXGroup;
+			children = (
+				587F58DF2951FEFC00C87FF1 /* HourlyForecastCellUIModel.swift */,
+				587F58E02951FEFC00C87FF1 /* HourlyForecastCell.swift */,
+				587F58E12951FEFC00C87FF1 /* HourlyForecastCellParameters.swift */,
+			);
+			path = "Hourly Forecast Item Cell";
+			sourceTree = "<group>";
+		};
+		587F58E729521E1B00C87FF1 /* Hourly Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				587F58E829521E2F00C87FF1 /* HourlyForecastTableViewCellUIModel.swift */,
+				587F58E929521E2F00C87FF1 /* HourlyForecastTableViewCell.swift */,
+				587F58EA29521E2F00C87FF1 /* HourlyForecastTableViewCellParameters.swift */,
+			);
+			path = "Hourly Forecast";
+			sourceTree = "<group>";
+		};
+		589A56CF2952DC9700CA940D /* Future Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				589A56D02952DCB200CA940D /* FutureForecastCellUIModel.swift */,
+				589A56D12952DCB200CA940D /* FutureForecastCell.swift */,
+				589A56D22952DCB200CA940D /* FutureForecastCellParameters.swift */,
+			);
+			path = "Future Forecast";
+			sourceTree = "<group>";
+		};
+		589A56DD2952F2A500CA940D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				589A56DF2952F2BE00CA940D /* Keys.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		589A56E12952F79F00CA940D /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				582B6B2A295458C1005E9917 /* Get Media File Gateway */,
+				589A56E22952F7AB00CA940D /* Forecast Gateway */,
+				589A56E32952F7B900CA940D /* Search Gateway */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		589A56E22952F7AB00CA940D /* Forecast Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				589A56E42952F7D500CA940D /* ForecastNetworkGateway.swift */,
+				589A56E52952F7D500CA940D /* ForecastGateway.swift */,
+				589A56E62952F7D500CA940D /* ForecastEntity.swift */,
+				589A56E72952F7D500CA940D /* ForecastGatewayParameters.swift */,
+			);
+			path = "Forecast Gateway";
+			sourceTree = "<group>";
+		};
+		589A56E32952F7B900CA940D /* Search Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				582B6B4E2954E648005E9917 /* SearchNetworkGateway.swift */,
+				582B6B4F2954E648005E9917 /* SearchGateway.swift */,
+				582B6B502954E648005E9917 /* SearchEntity.swift */,
+				582B6B512954E648005E9917 /* SearchGatewayParameters.swift */,
+			);
+			path = "Search Gateway";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +455,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587F58862950865800C87FF1 /* ViewController.swift in Sources */,
+				587F58DC2951FC0C00C87FF1 /* HourlyForecastView.swift in Sources */,
+				582B6B3D2954BFE3005E9917 /* SearchCityFactory.swift in Sources */,
+				589A56D32952DCB200CA940D /* FutureForecastCellUIModel.swift in Sources */,
+				587F58D02951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift in Sources */,
+				587F58E22951FEFC00C87FF1 /* HourlyForecastCellUIModel.swift in Sources */,
+				589A56E02952F2BE00CA940D /* Keys.swift in Sources */,
 				587F589B29508B1100C87FF1 /* ColorBook.swift in Sources */,
+				582B6B542954E648005E9917 /* SearchEntity.swift in Sources */,
+				582B6B30295458E4005E9917 /* GetMediaFileGateway.swift in Sources */,
+				587F58C72951C86300C87FF1 /* HomeScreenInterface.swift in Sources */,
+				582B6B3F2954BFE3005E9917 /* SearchCityPresenter.swift in Sources */,
+				587F58E32951FEFC00C87FF1 /* HourlyForecastCell.swift in Sources */,
+				589A56E82952F7D500CA940D /* ForecastNetworkGateway.swift in Sources */,
+				587F58CA2951C86300C87FF1 /* HomeScreenParameters.swift in Sources */,
+				587F58C92951C86300C87FF1 /* HomeScreenInteractor.swift in Sources */,
+				589A56EB2952F7D500CA940D /* ForecastGatewayParameters.swift in Sources */,
+				587F58C52951C86300C87FF1 /* HomeScreenPresenter.swift in Sources */,
+				582B6B31295458E4005E9917 /* GetMediaFileEntity.swift in Sources */,
+				582B6B3E2954BFE3005E9917 /* SearchCityUIModel.swift in Sources */,
 				587F589D29508E1900C87FF1 /* ImageBook.swift in Sources */,
+				582B6B32295458E4005E9917 /* GetMediaFileGatewayParameters.swift in Sources */,
+				589A56ED295301DB00CA940D /* ActivityIndicatorExtension.swift in Sources */,
+				587F58CE2951D7E000C87FF1 /* ConstraintsExtension.swift in Sources */,
+				587F58B82951C84400C87FF1 /* HomeHeaderCellUIModel.swift in Sources */,
+				582B6B412954BFE3005E9917 /* SearchCityInterface.swift in Sources */,
+				589A56EA2952F7D500CA940D /* ForecastEntity.swift in Sources */,
+				582B6B522954E648005E9917 /* SearchNetworkGateway.swift in Sources */,
 				587F58822950865800C87FF1 /* AppDelegate.swift in Sources */,
+				587F58ED29521E2F00C87FF1 /* HourlyForecastTableViewCellParameters.swift in Sources */,
+				582B6B4B2954E327005E9917 /* CityCountryCellUIModel.swift in Sources */,
+				589A56D52952DCB200CA940D /* FutureForecastCellParameters.swift in Sources */,
+				582B6B532954E648005E9917 /* SearchGateway.swift in Sources */,
+				587F58C42951C86300C87FF1 /* HomeScreenUIModel.swift in Sources */,
+				587F58E42951FEFC00C87FF1 /* HourlyForecastCellParameters.swift in Sources */,
 				587F58842950865800C87FF1 /* SceneDelegate.swift in Sources */,
+				589A56D42952DCB200CA940D /* FutureForecastCell.swift in Sources */,
+				582B6B552954E648005E9917 /* SearchGatewayParameters.swift in Sources */,
+				582B6B442954BFE3005E9917 /* SearchCityParameters.swift in Sources */,
+				582B6B432954BFE3005E9917 /* SearchCityInteractor.swift in Sources */,
+				582B6B4D2954E327005E9917 /* CityCountryCellParameters.swift in Sources */,
+				587F58C62951C86300C87FF1 /* HomeScreenRouter.swift in Sources */,
+				587F58EC29521E2F00C87FF1 /* HourlyForecastTableViewCell.swift in Sources */,
+				582B6B4C2954E327005E9917 /* CityCountryCell.swift in Sources */,
+				587F58DB2951FC0C00C87FF1 /* HourlyForecastViewUIModel.swift in Sources */,
+				587F58C32951C86300C87FF1 /* HomeScreenFactory.swift in Sources */,
+				587F58DA2951FC0C00C87FF1 /* HourlyForecastViewParameters.swift in Sources */,
+				582B6B2F295458E4005E9917 /* GetMediaFileNetworkGateway.swift in Sources */,
+				587F58EB29521E2F00C87FF1 /* HourlyForecastTableViewCellUIModel.swift in Sources */,
+				582B6B422954BFE3005E9917 /* SearchCityViewController.swift in Sources */,
+				589A56E92952F7D500CA940D /* ForecastGateway.swift in Sources */,
+				582B6B462954CDE5005E9917 /* Navigation Extension.swift in Sources */,
+				587F58B92951C84400C87FF1 /* HomeHeaderCell.swift in Sources */,
+				587F58CC2951C92D00C87FF1 /* UIViewMaskConstraintsExtension.swift in Sources */,
+				587F58B02951C65A00C87FF1 /* TableViewExtensions.swift in Sources */,
+				587F58BA2951C84400C87FF1 /* HomeHeaderCellParameters.swift in Sources */,
+				587F58E62951FFB800C87FF1 /* CollectionViewExtensions.swift in Sources */,
+				587F58C82951C86300C87FF1 /* HomeScreenViewController.swift in Sources */,
+				582B6B402954BFE3005E9917 /* SearchCityRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +623,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -290,14 +638,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = needed;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "needed for app";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +656,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,14 +668,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = needed;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "needed for app";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +686,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
