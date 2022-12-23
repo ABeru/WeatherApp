@@ -23,7 +23,7 @@ struct ImageBook {
     // MARK: Icons
     struct Icons {
         // MARK: Properties
-        static var back: UIImage { .init(named: "ic_back")!.withRenderingMode(.alwaysTemplate) }
+        static var back: UIImage { .init(named: "Ic_back")!.withRenderingMode(.alwaysTemplate) }
         static var humidity: UIImage { .init(named: "ic_humidity")!.withRenderingMode(.alwaysTemplate) }
         static var myLocation: UIImage { .init(named: "ic_my_location")!.withRenderingMode(.alwaysTemplate) }
         static var place: UIImage { .init(named: "ic_place")!.withRenderingMode(.alwaysTemplate) }

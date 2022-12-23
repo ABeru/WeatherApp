@@ -13,9 +13,9 @@ struct ColorBook {
     private init() {}
     
     // MARK: Primary
-    static let primary: UIColor = .init(named: "primary")! // #4A90E2
-    static let lightPrimary: UIColor = .init(named: "lightPrimary")! // #5A9FF0
-    static let white: UIColor = .init(named: "white")! // #FFFFFF
+    static let primary: UIColor = .init(named: "Primary")! // #4A90E2
+    static let lightPrimary: UIColor = .init(named: "LightPrimary")! // #5A9FF0
+    static let white: UIColor = .init(named: "White")! // #FFFFFF
     static let black: UIColor = .init(named: "black")! // #000000
     
 }
