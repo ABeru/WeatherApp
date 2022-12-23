@@ -17,10 +17,17 @@ struct GetMediaFileNetworkGateway: GetMediaFileGateway {
         case nil:
             let url = URL(string: "https:\(parameters.fileUrl)")!
             
-            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            let task = URLSession.shared.dataTask(with: url) {(data, response, _error) in
+                if let _error {
+                    DispatchQueue.main.async {
+                        completion(.failure(_error))
+                    }
+                    return
+                }
+                
                 guard let data = data else {
-                    completion(.failure(error!))
-                    return  }
+                    return
+                }
                 
                 let entity: GetMediaFileEntity = .init(
                     image: UIImage(data: data)!

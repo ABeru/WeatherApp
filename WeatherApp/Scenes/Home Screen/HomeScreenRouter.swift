@@ -22,7 +22,7 @@ final class HomeScreenRouter<Navigator>: HomeScreenRoutable
     }
 
     // MARK: Routable
-    func toSearchScreen() {
-        navigator.push(SearchCityFactory.default(parameters: .mock))
+    func toSearchScreen(delegate: (any SearchCityDelegate)?) {
+        navigator.push(SearchCityFactory.default(parameters: .mock, delegate: delegate))
     }
 }

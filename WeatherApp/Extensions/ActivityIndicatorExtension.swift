@@ -95,7 +95,7 @@ extension UIViewController {
 
 // MARK: - View Controller Init Activity Indicator
 extension UIViewController {
-    func initVocateActivityIndicator() -> UIActivityIndicatorView {
+    func initActivityIndicator() -> UIActivityIndicatorView {
         initActivityIndicator(color: ColorBook.primary)
     }
 }

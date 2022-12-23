@@ -103,7 +103,7 @@ final class HourlyForecastView:
             indexPath: indexPath,
             parameter: HourlyForecastCellParameters(
                 time: parameters.hours?[indexPath.row].time ?? "",
-                temp: String(parameters.hours?[indexPath.row].tempC ?? 0)
+                temp: "\(parameters.hours?[indexPath.row].tempC ?? 0)°"
             )
         )
     }

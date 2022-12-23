@@ -86,8 +86,10 @@ final class HourlyForecastCell: UICollectionViewCell, ConfigurableUICollectionVi
     // MARK: Configurable Collection View Cell
     func configure(parameter: some UICollectionViewCellParameter) {
         guard let parameters = parameter as? HourlyForecastCellParameters else { return }
+        
         timeLabel.text = String(parameters.time.dropFirst(11))
         weatherIconView.image = ImageBook.Icons.whiteDayCloudy
         tempLabel.text = parameters.temp
+        
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - SearchCity Viewable
-protocol SearchCityViewable: AnyObject, UIActivityIndicatorViewable {
+protocol SearchCityViewable: AnyObject, UIActivityIndicatorViewable, UIAlertViewable {
     func reloadData()
 }
 
@@ -25,7 +25,6 @@ protocol SearchCityPresentable: UITableViewDelegable, UITableViewDataSourceable 
 
 // MARK: - SearchCity Routable
 protocol SearchCityRoutable {
-    func toHomeScreen(with lat: Double, with lon: Double)
     func backToHomeScreen()
 }
 

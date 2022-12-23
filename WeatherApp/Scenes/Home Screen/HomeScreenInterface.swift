@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - HomeScreen Viewable
-protocol HomeScreenViewable: AnyObject, UIActivityIndicatorViewable {
+protocol HomeScreenViewable: AnyObject, UIActivityIndicatorViewable, UIAlertViewable {
     func reloadWeather()
 }
 
@@ -20,11 +20,12 @@ protocol HomeScreenNavigable: AnyObject, StandardNavigable {
 // MARK: - HomeScreen Presentable
 protocol HomeScreenPresentable: UITableViewDelegable, UITableViewDataSourceable {
     func viewDidLoad()
+    func updateCity(lat: Double, lon: Double)
 }
 
 // MARK: - HomeScreen Routable
 protocol HomeScreenRoutable {
-    func toSearchScreen()
+    func toSearchScreen(delegate: (any SearchCityDelegate)?)
 }
 
 // MARK: - HomeScreen Interactive

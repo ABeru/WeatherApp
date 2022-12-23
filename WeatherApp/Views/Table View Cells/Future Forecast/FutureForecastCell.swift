@@ -10,14 +10,13 @@ import UIKit
 // MARK: - FutureForecast Cell
 final class FutureForecastCell: UITableViewCell, ConfigurableUITableViewCell {
     // MARK: Subviews
-    private let cellContainer: UIView = { // FIXME: Needs to be changed
+    private let cellContainer: UIView = {
         let view: UIView = .init()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 5
+        view.backgroundColor = UIModel.Colors.background
         view.layer.shadowColor = UIModel.Colors.shadowColor.cgColor
-        view.layer.shadowOffset = CGSize(width: 5, height: 5)
-        view.layer.shadowRadius = 10
-        view.layer.shouldRasterize = true
+        view.layer.shadowRadius = UIModel.Layout.shadowRadius
+        view.layer.shadowOffset = CGSize(width: UIModel.Layout.shadowOffsetWidth, height: UIModel.Layout.shadowOffsetHeight)
         return view
     }()
     
@@ -26,7 +25,7 @@ final class FutureForecastCell: UITableViewCell, ConfigurableUITableViewCell {
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .horizontal
         stack.distribution = .equalSpacing
-        stack.spacing = UIModel.Layout.weatherStackViewSpacing
+        stack.spacing = UIModel.Layout.weatherStackSpacing
         return stack
     }()
     
@@ -83,9 +82,9 @@ final class FutureForecastCell: UITableViewCell, ConfigurableUITableViewCell {
     
     private func addSubviews() {
         contentView.addSubview(cellContainer)
-        
+
         cellContainer.addSubview(weatherStackView)
-        
+
         weatherStackView.addArrangedSubview(dayLabel)
         weatherStackView.addArrangedSubview(tempLabel)
         weatherStackView.addArrangedSubview(weatherIconView)
@@ -96,12 +95,12 @@ final class FutureForecastCell: UITableViewCell, ConfigurableUITableViewCell {
             cellContainer.constraintLeading(to: contentView),
             cellContainer.constraintTrailing(to: contentView),
             cellContainer.constraintTop(to: contentView, constant: UIModel.Layout.cellContainerMarginTop),
-            cellContainer.constraintBottom(to: contentView),
-        
+            cellContainer.constraintBottom(to: contentView, constant: -UIModel.Layout.cellContainerMarginBottom),
+            
             weatherStackView.constraintLeading(to: cellContainer),
             weatherStackView.constraintTrailing(to: cellContainer),
-            weatherStackView.constraintTop(to: cellContainer),
-            weatherStackView.constraintBottom(to: cellContainer)
+            weatherStackView.constraintTop(to: cellContainer, constant: UIModel.Layout.weatherStackMargiVer),
+            weatherStackView.constraintBottom(to: cellContainer, constant: -UIModel.Layout.weatherStackMargiVer)
         ])
     }
 
@@ -112,12 +111,18 @@ final class FutureForecastCell: UITableViewCell, ConfigurableUITableViewCell {
         
         if parameters.isSelected == true {
             cellContainer.layer.shadowOpacity = 1
+            dayLabel.textColor = UIModel.Colors.selectedColor
+            tempLabel.textColor = UIModel.Colors.selectedColor
+            weatherIconView.tintColor = UIModel.Colors.selectedColor
         } else {
             cellContainer.layer.shadowOpacity = 0
+            dayLabel.textColor = UIModel.Colors.themeColor
+            tempLabel.textColor = UIModel.Colors.themeColor
+            weatherIconView.tintColor = UIModel.Colors.themeColor
         }
         
         dayLabel.text = getTodayWeekDay(from: day)
-        tempLabel.text = parameters.temp
+        tempLabel.text = "\(parameters.maxTemp)° / \(parameters.minTemp)°"
         
         weatherIconView.image = nil
         loadImage(parameters: parameters)

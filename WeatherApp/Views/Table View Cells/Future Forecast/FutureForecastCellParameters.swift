@@ -12,7 +12,8 @@ struct FutureForecastCellParameters: UITableViewCellParameter {
     // MARK: Properties
     let day: String
     
-    let temp: String
+    let maxTemp: Double
+    let minTemp: Double
     
     let imageUrl: String?
     

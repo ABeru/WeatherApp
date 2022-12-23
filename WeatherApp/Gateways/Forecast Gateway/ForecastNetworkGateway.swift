@@ -14,8 +14,17 @@ struct ForecastNetworkGateway: ForecastGateway {
         completion: @escaping (Result<ForecastEntity, any Error>) -> Void
     ) {
         let url = URL(string: "\(Keys.baseAPIURL + Keys.forecast)&q=\(parameters.lat),\(parameters.lon)&days=7&aqi=no&alerts=no")!
-        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            guard let data = data else { return }
+        let task = URLSession.shared.dataTask(with: url) {(data, response, _error) in
+            if let _error {
+                DispatchQueue.main.async {
+                    completion(.failure(_error))
+                }
+                return
+            }
+            
+            guard let data = data else {
+                return
+            }
             
             let decoder = JSONDecoder()
             
@@ -25,7 +34,9 @@ struct ForecastNetworkGateway: ForecastGateway {
                     completion(.success(forecast))
                 }
             } catch {
-                completion(.failure(error))
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
             }
             
         }

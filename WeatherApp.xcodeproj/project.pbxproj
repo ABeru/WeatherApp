@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5829309F2955DE1A000796AF /* Alert Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5829309E2955DE1A000796AF /* Alert Extension.swift */; };
+		582930A129561AB9000796AF /* SearchCityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930A029561AB9000796AF /* SearchCityDelegate.swift */; };
 		582B6B2F295458E4005E9917 /* GetMediaFileNetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2B295458E4005E9917 /* GetMediaFileNetworkGateway.swift */; };
 		582B6B30295458E4005E9917 /* GetMediaFileGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2C295458E4005E9917 /* GetMediaFileGateway.swift */; };
 		582B6B31295458E4005E9917 /* GetMediaFileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2D295458E4005E9917 /* GetMediaFileEntity.swift */; };
@@ -69,6 +71,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5829309E2955DE1A000796AF /* Alert Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert Extension.swift"; sourceTree = "<group>"; };
+		582930A029561AB9000796AF /* SearchCityDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityDelegate.swift; sourceTree = "<group>"; };
 		582B6B2B295458E4005E9917 /* GetMediaFileNetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileNetworkGateway.swift; sourceTree = "<group>"; };
 		582B6B2C295458E4005E9917 /* GetMediaFileGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileGateway.swift; sourceTree = "<group>"; };
 		582B6B2D295458E4005E9917 /* GetMediaFileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileEntity.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 				582B6B3A2954BFE3005E9917 /* SearchCityViewController.swift */,
 				582B6B3B2954BFE3005E9917 /* SearchCityInteractor.swift */,
 				582B6B3C2954BFE3005E9917 /* SearchCityParameters.swift */,
+				582930A029561AB9000796AF /* SearchCityDelegate.swift */,
 			);
 			path = "Search City";
 			sourceTree = "<group>";
@@ -214,14 +219,14 @@
 		587F58802950865800C87FF1 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				589A56E12952F79F00CA940D /* Gateways */,
-				589A56DD2952F2A500CA940D /* Models */,
-				587F58B12951C7C700C87FF1 /* Views */,
-				587F58AE2951C63B00C87FF1 /* Extensions */,
 				587F588F2950865900C87FF1 /* Info.plist */,
-				587F589729508A9100C87FF1 /* Helpers */,
 				587F58952950892100C87FF1 /* App Control */,
 				587F58962950893600C87FF1 /* Scenes */,
+				587F58B12951C7C700C87FF1 /* Views */,
+				589A56E12952F79F00CA940D /* Gateways */,
+				589A56DD2952F2A500CA940D /* Models */,
+				587F58AE2951C63B00C87FF1 /* Extensions */,
+				587F589729508A9100C87FF1 /* Helpers */,
 				587F588A2950865900C87FF1 /* Assets.xcassets */,
 			);
 			path = WeatherApp;
@@ -263,6 +268,7 @@
 				587F58E52951FFB800C87FF1 /* CollectionViewExtensions.swift */,
 				589A56EC295301DB00CA940D /* ActivityIndicatorExtension.swift */,
 				582B6B452954CDE5005E9917 /* Navigation Extension.swift */,
+				5829309E2955DE1A000796AF /* Alert Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -480,6 +486,7 @@
 				587F58CE2951D7E000C87FF1 /* ConstraintsExtension.swift in Sources */,
 				587F58B82951C84400C87FF1 /* HomeHeaderCellUIModel.swift in Sources */,
 				582B6B412954BFE3005E9917 /* SearchCityInterface.swift in Sources */,
+				582930A129561AB9000796AF /* SearchCityDelegate.swift in Sources */,
 				589A56EA2952F7D500CA940D /* ForecastEntity.swift in Sources */,
 				582B6B522954E648005E9917 /* SearchNetworkGateway.swift in Sources */,
 				587F58822950865800C87FF1 /* AppDelegate.swift in Sources */,
@@ -501,6 +508,7 @@
 				587F58DB2951FC0C00C87FF1 /* HourlyForecastViewUIModel.swift in Sources */,
 				587F58C32951C86300C87FF1 /* HomeScreenFactory.swift in Sources */,
 				587F58DA2951FC0C00C87FF1 /* HourlyForecastViewParameters.swift in Sources */,
+				5829309F2955DE1A000796AF /* Alert Extension.swift in Sources */,
 				582B6B2F295458E4005E9917 /* GetMediaFileNetworkGateway.swift in Sources */,
 				587F58EB29521E2F00C87FF1 /* HourlyForecastTableViewCellUIModel.swift in Sources */,
 				582B6B422954BFE3005E9917 /* SearchCityViewController.swift in Sources */,
@@ -641,7 +649,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 87GZ4V994Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = needed;
@@ -671,7 +679,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 87GZ4V994Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = needed;

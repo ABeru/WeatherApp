@@ -20,6 +20,8 @@ final class SearchCityPresenter<View, Router, Interactor>: SearchCityPresentable
     private let interactor: Interactor
     private let parameters: SearchCityParameters
     
+    private unowned let delegate: (any SearchCityDelegate)?
+    
     private var citys: SearchEntity.SearchResult = []
     
     private var searchResults: [UITableViewCellParameter] = []
@@ -29,12 +31,14 @@ final class SearchCityPresenter<View, Router, Interactor>: SearchCityPresentable
         view: View,
         router: Router,
         interactor: Interactor,
-        parameters: SearchCityParameters
+        parameters: SearchCityParameters,
+        delegate: (any SearchCityDelegate)?
     ) {
         self.view = view
         self.router = router
         self.interactor = interactor
         self.parameters = parameters
+        self.delegate = delegate
     }
 
     // MARK: Presentable
@@ -53,10 +57,19 @@ final class SearchCityPresenter<View, Router, Interactor>: SearchCityPresentable
             switch result {
             case .success(let searchResult):
                 self.citys = searchResult
-                self.searchResults = self.createResultCells(from: self.citys)
+                self.searchResults = self.createResultCells(
+                    from: self.citys
+                )
+                
                 self.view.reloadData()
+                
             case .failure(let err):
-                print(err)
+                self.view.presentAlert(
+                    parameters: .init(
+                        title: "Error",
+                        message: err.localizedDescription
+                    )
+                )
             }
             
             
@@ -68,7 +81,9 @@ final class SearchCityPresenter<View, Router, Interactor>: SearchCityPresentable
             let lat = citys[row].lat,
             let lon = citys[row].lon
         else { return }
-        router.toHomeScreen(with: lat, with: lon)
+        
+        delegate?.didSelectCity(lat: lat, lon: lon)
+        router.backToHomeScreen()
     }
 
     // MARK: Table View DataSourceable

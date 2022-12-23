@@ -22,10 +22,6 @@ final class SearchCityRouter<Navigator>: SearchCityRoutable
     }
 
     // MARK: Routable
-    func toHomeScreen(with lat: Double, with lon: Double ) {
-        navigator.push(HomeScreenFactory.default(parameters: .init(lat: lat, lon: lon)))
-    }
-    
     func backToHomeScreen() {
         navigator.popToRoot()
     }

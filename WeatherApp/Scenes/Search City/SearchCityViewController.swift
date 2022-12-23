@@ -72,7 +72,7 @@ final class SearchCityViewController:
         return tableView
     }()
     
-    lazy var activityIndicator: UIActivityIndicatorView = initVocateActivityIndicator()
+    lazy var activityIndicator: UIActivityIndicatorView = initActivityIndicator()
     
     // MARK: Properties
     var presenter: (any SearchCityPresentable)!

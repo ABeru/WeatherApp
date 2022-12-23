@@ -6,12 +6,12 @@
 //
 
 import UIKit
-import CoreLocation
 
 // MARK: - HomeScreen View Controller
 final class HomeScreenViewController:
     UIViewController, HomeScreenViewable, HomeScreenNavigable,
-    UITableViewDelegate, UITableViewDataSource
+    UITableViewDelegate, UITableViewDataSource,
+    SearchCityDelegate
 {
     // MARK: Subviews
     private lazy var weatherTableView: UITableView = {
@@ -34,7 +34,7 @@ final class HomeScreenViewController:
         return tableView
     }()
     
-    lazy var activityIndicator: UIActivityIndicatorView = initVocateActivityIndicator()
+    lazy var activityIndicator: UIActivityIndicatorView = initActivityIndicator()
     
     // MARK: Properties
     var presenter: (any HomeScreenPresentable)!
@@ -81,8 +81,7 @@ final class HomeScreenViewController:
     func reloadWeather() {
         weatherTableView.reloadData()
     }
-    // MARK: Navigable
-
+   
     // MARK: Table View Delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.tableViewDidSelectRow(section: indexPath.section, row: indexPath.row)
@@ -101,5 +100,10 @@ final class HomeScreenViewController:
         tableView.dequeueAndConfigureReusableCell(
             parameter: presenter.tableViewCellParameter(section: indexPath.section, row: indexPath.row)
         )
+    }
+   
+    // MARK: Search City Delegate
+    func didSelectCity(lat: Double, lon: Double) {
+        presenter.updateCity(lat: lat, lon: lon)
     }
 }

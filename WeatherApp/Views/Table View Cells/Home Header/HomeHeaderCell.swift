@@ -260,9 +260,9 @@ final class HomeHeaderCell: UITableViewCell, ConfigurableUITableViewCell {
         cityLabel.text = parameters.city
         dayLabel.text = parameters.day
         
-        tempLabel.text = parameters.temp
-        humLabel.text = parameters.hum
-        windLabel.text = parameters.wind
+        tempLabel.text = "\(parameters.maxTemp)° / \(parameters.minTemp)°"
+        humLabel.text = "\(parameters.hum)"
+        windLabel.text = "\(parameters.wind)"
         
         weatherIconView.image = nil
         loadImage(parameters: parameters)
