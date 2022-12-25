@@ -14,7 +14,6 @@ struct SearchCityFactory {
     
     // MARK: Factory
     static func `default`(
-        parameters: SearchCityParameters,
         delegate: (any SearchCityDelegate)?
     ) -> UIViewController {
         let viewController: SearchCityViewController = .init()
@@ -27,7 +26,6 @@ struct SearchCityFactory {
             view: viewController,
             router: router,
             interactor: interactor,
-            parameters: parameters,
             delegate: delegate
         )
 

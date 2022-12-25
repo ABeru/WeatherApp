@@ -18,7 +18,6 @@ final class SearchCityPresenter<View, Router, Interactor>: SearchCityPresentable
     private unowned let view: View
     private let router: Router
     private let interactor: Interactor
-    private let parameters: SearchCityParameters
     
     private unowned let delegate: (any SearchCityDelegate)?
     
@@ -31,13 +30,11 @@ final class SearchCityPresenter<View, Router, Interactor>: SearchCityPresentable
         view: View,
         router: Router,
         interactor: Interactor,
-        parameters: SearchCityParameters,
         delegate: (any SearchCityDelegate)?
     ) {
         self.view = view
         self.router = router
         self.interactor = interactor
-        self.parameters = parameters
         self.delegate = delegate
     }
 

@@ -25,6 +25,8 @@ struct HomeHeaderCellParameters: UITableViewCellParameter {
     
     let locationButtonHandler: () -> Void
     
+    let pinButtonHandler: () -> Void
+    
     // MARK: Table View Cell Parameter
     var reuseID: String { HomeHeaderCell.reuseID }
 }

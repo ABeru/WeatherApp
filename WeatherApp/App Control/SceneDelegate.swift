@@ -21,7 +21,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windoScene: UIWindowScene = scene as? UIWindowScene else { return }
         
         window = .init(windowScene: windoScene)
-        window?.rootViewController = UINavigationController(rootViewController: HomeScreenFactory.default(parameters: .mock))
+        window?.rootViewController = UINavigationController(rootViewController: HomeScreenFactory.default())
         window?.makeKeyAndVisible()
     }
 }

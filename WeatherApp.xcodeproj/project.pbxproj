@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		5829309F2955DE1A000796AF /* Alert Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5829309E2955DE1A000796AF /* Alert Extension.swift */; };
 		582930A129561AB9000796AF /* SearchCityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930A029561AB9000796AF /* SearchCityDelegate.swift */; };
+		582930A429585BA8000796AF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930A329585BA8000796AF /* LocationManager.swift */; };
+		582930AE29586754000796AF /* MapScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930A629586754000796AF /* MapScreenFactory.swift */; };
+		582930AF29586754000796AF /* MapScreenUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930A729586754000796AF /* MapScreenUIModel.swift */; };
+		582930B029586754000796AF /* MapScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930A829586754000796AF /* MapScreenPresenter.swift */; };
+		582930B129586754000796AF /* MapScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930A929586754000796AF /* MapScreenRouter.swift */; };
+		582930B229586754000796AF /* MapScreenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930AA29586754000796AF /* MapScreenInterface.swift */; };
+		582930B329586754000796AF /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930AB29586754000796AF /* MapScreenViewController.swift */; };
+		582930B7295868D0000796AF /* MapScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582930B6295868D0000796AF /* MapScreenDelegate.swift */; };
 		582B6B2F295458E4005E9917 /* GetMediaFileNetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2B295458E4005E9917 /* GetMediaFileNetworkGateway.swift */; };
 		582B6B30295458E4005E9917 /* GetMediaFileGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2C295458E4005E9917 /* GetMediaFileGateway.swift */; };
 		582B6B31295458E4005E9917 /* GetMediaFileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B2D295458E4005E9917 /* GetMediaFileEntity.swift */; };
@@ -20,7 +28,6 @@
 		582B6B412954BFE3005E9917 /* SearchCityInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B392954BFE3005E9917 /* SearchCityInterface.swift */; };
 		582B6B422954BFE3005E9917 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B3A2954BFE3005E9917 /* SearchCityViewController.swift */; };
 		582B6B432954BFE3005E9917 /* SearchCityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B3B2954BFE3005E9917 /* SearchCityInteractor.swift */; };
-		582B6B442954BFE3005E9917 /* SearchCityParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B3C2954BFE3005E9917 /* SearchCityParameters.swift */; };
 		582B6B462954CDE5005E9917 /* Navigation Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B452954CDE5005E9917 /* Navigation Extension.swift */; };
 		582B6B4B2954E327005E9917 /* CityCountryCellUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B482954E327005E9917 /* CityCountryCellUIModel.swift */; };
 		582B6B4C2954E327005E9917 /* CityCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B6B492954E327005E9917 /* CityCountryCell.swift */; };
@@ -45,7 +52,6 @@
 		587F58C72951C86300C87FF1 /* HomeScreenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58BF2951C86300C87FF1 /* HomeScreenInterface.swift */; };
 		587F58C82951C86300C87FF1 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58C02951C86300C87FF1 /* HomeScreenViewController.swift */; };
 		587F58C92951C86300C87FF1 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58C12951C86300C87FF1 /* HomeScreenInteractor.swift */; };
-		587F58CA2951C86300C87FF1 /* HomeScreenParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58C22951C86300C87FF1 /* HomeScreenParameters.swift */; };
 		587F58CC2951C92D00C87FF1 /* UIViewMaskConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58CB2951C92D00C87FF1 /* UIViewMaskConstraintsExtension.swift */; };
 		587F58CE2951D7E000C87FF1 /* ConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58CD2951D7E000C87FF1 /* ConstraintsExtension.swift */; };
 		587F58D02951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F58CF2951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift */; };
@@ -73,6 +79,14 @@
 /* Begin PBXFileReference section */
 		5829309E2955DE1A000796AF /* Alert Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert Extension.swift"; sourceTree = "<group>"; };
 		582930A029561AB9000796AF /* SearchCityDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityDelegate.swift; sourceTree = "<group>"; };
+		582930A329585BA8000796AF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		582930A629586754000796AF /* MapScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenFactory.swift; sourceTree = "<group>"; };
+		582930A729586754000796AF /* MapScreenUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenUIModel.swift; sourceTree = "<group>"; };
+		582930A829586754000796AF /* MapScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenPresenter.swift; sourceTree = "<group>"; };
+		582930A929586754000796AF /* MapScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenRouter.swift; sourceTree = "<group>"; };
+		582930AA29586754000796AF /* MapScreenInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenInterface.swift; sourceTree = "<group>"; };
+		582930AB29586754000796AF /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
+		582930B6295868D0000796AF /* MapScreenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenDelegate.swift; sourceTree = "<group>"; };
 		582B6B2B295458E4005E9917 /* GetMediaFileNetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileNetworkGateway.swift; sourceTree = "<group>"; };
 		582B6B2C295458E4005E9917 /* GetMediaFileGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileGateway.swift; sourceTree = "<group>"; };
 		582B6B2D295458E4005E9917 /* GetMediaFileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaFileEntity.swift; sourceTree = "<group>"; };
@@ -84,7 +98,6 @@
 		582B6B392954BFE3005E9917 /* SearchCityInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityInterface.swift; sourceTree = "<group>"; };
 		582B6B3A2954BFE3005E9917 /* SearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewController.swift; sourceTree = "<group>"; };
 		582B6B3B2954BFE3005E9917 /* SearchCityInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityInteractor.swift; sourceTree = "<group>"; };
-		582B6B3C2954BFE3005E9917 /* SearchCityParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityParameters.swift; sourceTree = "<group>"; };
 		582B6B452954CDE5005E9917 /* Navigation Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation Extension.swift"; sourceTree = "<group>"; };
 		582B6B482954E327005E9917 /* CityCountryCellUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCountryCellUIModel.swift; sourceTree = "<group>"; };
 		582B6B492954E327005E9917 /* CityCountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCountryCell.swift; sourceTree = "<group>"; };
@@ -111,7 +124,6 @@
 		587F58BF2951C86300C87FF1 /* HomeScreenInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInterface.swift; sourceTree = "<group>"; };
 		587F58C02951C86300C87FF1 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		587F58C12951C86300C87FF1 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
-		587F58C22951C86300C87FF1 /* HomeScreenParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenParameters.swift; sourceTree = "<group>"; };
 		587F58CB2951C92D00C87FF1 /* UIViewMaskConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewMaskConstraintsExtension.swift; sourceTree = "<group>"; };
 		587F58CD2951D7E000C87FF1 /* ConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExtension.swift; sourceTree = "<group>"; };
 		587F58CF2951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.Section.swift; sourceTree = "<group>"; };
@@ -147,6 +159,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		582930A229585B92000796AF /* Services & Managers */ = {
+			isa = PBXGroup;
+			children = (
+				582930A329585BA8000796AF /* LocationManager.swift */,
+			);
+			path = "Services & Managers";
+			sourceTree = "<group>";
+		};
+		582930A529586737000796AF /* Map Screen */ = {
+			isa = PBXGroup;
+			children = (
+				582930A629586754000796AF /* MapScreenFactory.swift */,
+				582930A729586754000796AF /* MapScreenUIModel.swift */,
+				582930A829586754000796AF /* MapScreenPresenter.swift */,
+				582930A929586754000796AF /* MapScreenRouter.swift */,
+				582930AA29586754000796AF /* MapScreenInterface.swift */,
+				582930AB29586754000796AF /* MapScreenViewController.swift */,
+				582930B6295868D0000796AF /* MapScreenDelegate.swift */,
+			);
+			path = "Map Screen";
+			sourceTree = "<group>";
+		};
 		582B6B2A295458C1005E9917 /* Get Media File Gateway */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +202,6 @@
 				587F58BF2951C86300C87FF1 /* HomeScreenInterface.swift */,
 				587F58C02951C86300C87FF1 /* HomeScreenViewController.swift */,
 				587F58C12951C86300C87FF1 /* HomeScreenInteractor.swift */,
-				587F58C22951C86300C87FF1 /* HomeScreenParameters.swift */,
 				587F58CF2951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift */,
 			);
 			path = "Home Screen";
@@ -184,7 +217,6 @@
 				582B6B392954BFE3005E9917 /* SearchCityInterface.swift */,
 				582B6B3A2954BFE3005E9917 /* SearchCityViewController.swift */,
 				582B6B3B2954BFE3005E9917 /* SearchCityInteractor.swift */,
-				582B6B3C2954BFE3005E9917 /* SearchCityParameters.swift */,
 				582930A029561AB9000796AF /* SearchCityDelegate.swift */,
 			);
 			path = "Search City";
@@ -219,6 +251,7 @@
 		587F58802950865800C87FF1 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				582930A229585B92000796AF /* Services & Managers */,
 				587F588F2950865900C87FF1 /* Info.plist */,
 				587F58952950892100C87FF1 /* App Control */,
 				587F58962950893600C87FF1 /* Scenes */,
@@ -244,6 +277,7 @@
 		587F58962950893600C87FF1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				582930A529586737000796AF /* Map Screen */,
 				582B6B332954BFA1005E9917 /* Home Screen */,
 				582B6B342954BFBB005E9917 /* Search City */,
 			);
@@ -463,6 +497,8 @@
 			files = (
 				587F58DC2951FC0C00C87FF1 /* HourlyForecastView.swift in Sources */,
 				582B6B3D2954BFE3005E9917 /* SearchCityFactory.swift in Sources */,
+				582930B329586754000796AF /* MapScreenViewController.swift in Sources */,
+				582930B7295868D0000796AF /* MapScreenDelegate.swift in Sources */,
 				589A56D32952DCB200CA940D /* FutureForecastCellUIModel.swift in Sources */,
 				587F58D02951DD0F00C87FF1 /* HomeScreenPresenter.Section.swift in Sources */,
 				587F58E22951FEFC00C87FF1 /* HourlyForecastCellUIModel.swift in Sources */,
@@ -474,12 +510,12 @@
 				582B6B3F2954BFE3005E9917 /* SearchCityPresenter.swift in Sources */,
 				587F58E32951FEFC00C87FF1 /* HourlyForecastCell.swift in Sources */,
 				589A56E82952F7D500CA940D /* ForecastNetworkGateway.swift in Sources */,
-				587F58CA2951C86300C87FF1 /* HomeScreenParameters.swift in Sources */,
 				587F58C92951C86300C87FF1 /* HomeScreenInteractor.swift in Sources */,
 				589A56EB2952F7D500CA940D /* ForecastGatewayParameters.swift in Sources */,
 				587F58C52951C86300C87FF1 /* HomeScreenPresenter.swift in Sources */,
 				582B6B31295458E4005E9917 /* GetMediaFileEntity.swift in Sources */,
 				582B6B3E2954BFE3005E9917 /* SearchCityUIModel.swift in Sources */,
+				582930B129586754000796AF /* MapScreenRouter.swift in Sources */,
 				587F589D29508E1900C87FF1 /* ImageBook.swift in Sources */,
 				582B6B32295458E4005E9917 /* GetMediaFileGatewayParameters.swift in Sources */,
 				589A56ED295301DB00CA940D /* ActivityIndicatorExtension.swift in Sources */,
@@ -488,10 +524,12 @@
 				582B6B412954BFE3005E9917 /* SearchCityInterface.swift in Sources */,
 				582930A129561AB9000796AF /* SearchCityDelegate.swift in Sources */,
 				589A56EA2952F7D500CA940D /* ForecastEntity.swift in Sources */,
+				582930B229586754000796AF /* MapScreenInterface.swift in Sources */,
 				582B6B522954E648005E9917 /* SearchNetworkGateway.swift in Sources */,
 				587F58822950865800C87FF1 /* AppDelegate.swift in Sources */,
 				587F58ED29521E2F00C87FF1 /* HourlyForecastTableViewCellParameters.swift in Sources */,
 				582B6B4B2954E327005E9917 /* CityCountryCellUIModel.swift in Sources */,
+				582930AF29586754000796AF /* MapScreenUIModel.swift in Sources */,
 				589A56D52952DCB200CA940D /* FutureForecastCellParameters.swift in Sources */,
 				582B6B532954E648005E9917 /* SearchGateway.swift in Sources */,
 				587F58C42951C86300C87FF1 /* HomeScreenUIModel.swift in Sources */,
@@ -499,9 +537,10 @@
 				587F58842950865800C87FF1 /* SceneDelegate.swift in Sources */,
 				589A56D42952DCB200CA940D /* FutureForecastCell.swift in Sources */,
 				582B6B552954E648005E9917 /* SearchGatewayParameters.swift in Sources */,
-				582B6B442954BFE3005E9917 /* SearchCityParameters.swift in Sources */,
 				582B6B432954BFE3005E9917 /* SearchCityInteractor.swift in Sources */,
+				582930B029586754000796AF /* MapScreenPresenter.swift in Sources */,
 				582B6B4D2954E327005E9917 /* CityCountryCellParameters.swift in Sources */,
+				582930AE29586754000796AF /* MapScreenFactory.swift in Sources */,
 				587F58C62951C86300C87FF1 /* HomeScreenRouter.swift in Sources */,
 				587F58EC29521E2F00C87FF1 /* HourlyForecastTableViewCell.swift in Sources */,
 				582B6B4C2954E327005E9917 /* CityCountryCell.swift in Sources */,
@@ -509,6 +548,7 @@
 				587F58C32951C86300C87FF1 /* HomeScreenFactory.swift in Sources */,
 				587F58DA2951FC0C00C87FF1 /* HourlyForecastViewParameters.swift in Sources */,
 				5829309F2955DE1A000796AF /* Alert Extension.swift in Sources */,
+				582930A429585BA8000796AF /* LocationManager.swift in Sources */,
 				582B6B2F295458E4005E9917 /* GetMediaFileNetworkGateway.swift in Sources */,
 				587F58EB29521E2F00C87FF1 /* HourlyForecastTableViewCellUIModel.swift in Sources */,
 				582B6B422954BFE3005E9917 /* SearchCityViewController.swift in Sources */,

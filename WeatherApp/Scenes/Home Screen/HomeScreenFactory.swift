@@ -13,7 +13,7 @@ struct HomeScreenFactory {
     private init() {}
     
     // MARK: Factory
-    static func `default`(parameters: HomeScreenParameters) -> UIViewController {
+    static func `default`() -> UIViewController {
         let viewController: HomeScreenViewController = .init()
         
         let router: HomeScreenRouter = .init(navigator: viewController)
@@ -23,8 +23,7 @@ struct HomeScreenFactory {
         let presenter: HomeScreenPresenter = .init(
             view: viewController,
             router: router,
-            interactor: interactor,
-            parameters: parameters
+            interactor: interactor
         )
 
         viewController.presenter = presenter

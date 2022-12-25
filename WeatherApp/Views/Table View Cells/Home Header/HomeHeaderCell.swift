@@ -13,12 +13,13 @@ final class HomeHeaderCell: UITableViewCell, ConfigurableUITableViewCell {
     private let headerContainerView: UIView = .init()
         .withTranslatesAutoresizingMaskIntoConstraints(false)
     
-    private let pinIconView: UIImageView = {
-        let imageView: UIImageView = .init(image: ImageBook.Icons.place)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = UIModel.Colors.themeColor
-        return imageView
+    private let pinIconButton: UIButton = {
+        let button: UIButton = .init()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(ImageBook.Icons.place, for: .normal)
+        button.imageView?.contentMode = .scaleAspectFit
+        button.imageView?.tintColor = UIModel.Colors.themeColor
+        return button
     }()
     
     private let cityLabel: UILabel = {
@@ -136,6 +137,8 @@ final class HomeHeaderCell: UITableViewCell, ConfigurableUITableViewCell {
     private var day = " "
     
     private var locationButtonHandler: (() -> Void)?
+    private var pinButtonHandler: (() -> Void)?
+
 
     // MARK: Initializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -162,7 +165,7 @@ final class HomeHeaderCell: UITableViewCell, ConfigurableUITableViewCell {
     private func addSubviews() {
         contentView.addSubview(headerContainerView)
         
-        headerContainerView.addSubview(pinIconView)
+        headerContainerView.addSubview(pinIconButton)
         headerContainerView.addSubview(cityLabel)
         headerContainerView.addSubview(locationIconButton)
         
@@ -192,13 +195,13 @@ final class HomeHeaderCell: UITableViewCell, ConfigurableUITableViewCell {
             headerContainerView.constraintTrailing(to: contentView),
             headerContainerView.constraintTop(to: contentView, layoutGuide: .safeArea),
             
-            pinIconView.constraintLeading(to: headerContainerView, constant: UIModel.Layout.pinIconMarginLeading),
-            pinIconView.constraintWidth(to: nil, constant: UIModel.Layout.pinIconDimension),
-            pinIconView.constraintHeight(to: nil, constant: UIModel.Layout.pinIconDimension),
-            pinIconView.constraintTop(to: headerContainerView),
-            pinIconView.constraintBottom(to: headerContainerView),
+            pinIconButton.constraintLeading(to: headerContainerView, constant: UIModel.Layout.pinIconMarginLeading),
+            pinIconButton.constraintWidth(to: nil, constant: UIModel.Layout.pinIconDimension),
+            pinIconButton.constraintHeight(to: nil, constant: UIModel.Layout.pinIconDimension),
+            pinIconButton.constraintTop(to: headerContainerView),
+            pinIconButton.constraintBottom(to: headerContainerView),
             
-            cityLabel.constraintLeading(to: pinIconView, attribute: .trailing, constant: UIModel.Layout.cityLabelMarginHor),
+            cityLabel.constraintLeading(to: pinIconButton, attribute: .trailing, constant: UIModel.Layout.cityLabelMarginHor),
             cityLabel.constraintTrailing(to: locationIconButton, attribute: .leading, relation: .greaterThanOrEqual, constant: UIModel.Layout.cityLabelMarginHor),
             cityLabel.constraintTop(to: headerContainerView),
             cityLabel.constraintBottom(to: headerContainerView),
@@ -256,24 +259,31 @@ final class HomeHeaderCell: UITableViewCell, ConfigurableUITableViewCell {
         day = parameters.day
         
         locationButtonHandler = parameters.locationButtonHandler
+        pinButtonHandler = parameters.pinButtonHandler
         
         cityLabel.text = parameters.city
         dayLabel.text = parameters.day
         
         tempLabel.text = "\(parameters.maxTemp)° / \(parameters.minTemp)°"
-        humLabel.text = "\(parameters.hum)"
-        windLabel.text = "\(parameters.wind)"
+        humLabel.text = "\(parameters.hum)%"
+        windLabel.text = "\(parameters.wind)m/hr"
         
         weatherIconView.image = nil
         loadImage(parameters: parameters)
         
         locationIconButton.addTarget(self, action: #selector(didClickLocation(_ :)), for: .touchUpInside)
-        
+        pinIconButton.addTarget(self, action: #selector(didClickPin(_ :)), for: .touchUpInside)
         
     }
     
     @objc private func didClickLocation(_ sender: UIButton?) {
         if let closure = self.locationButtonHandler {
+            closure()
+        }
+    }
+    
+    @objc private func didClickPin(_ sender: UIButton?) {
+        if let closure = self.pinButtonHandler {
             closure()
         }
     }

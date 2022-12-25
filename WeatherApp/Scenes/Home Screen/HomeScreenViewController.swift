@@ -11,7 +11,7 @@ import UIKit
 final class HomeScreenViewController:
     UIViewController, HomeScreenViewable, HomeScreenNavigable,
     UITableViewDelegate, UITableViewDataSource,
-    SearchCityDelegate
+    SearchCityDelegate, MapScreenDelegate
 {
     // MARK: Subviews
     private lazy var weatherTableView: UITableView = {
@@ -104,6 +104,11 @@ final class HomeScreenViewController:
    
     // MARK: Search City Delegate
     func didSelectCity(lat: Double, lon: Double) {
+        presenter.updateCity(lat: lat, lon: lon)
+    }
+    
+    // MARK: Map Screen Delegate
+    func didSelectPlace(lat: Double, lon: Double) {
         presenter.updateCity(lat: lat, lon: lon)
     }
 }

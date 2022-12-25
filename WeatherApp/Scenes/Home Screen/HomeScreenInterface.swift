@@ -26,6 +26,7 @@ protocol HomeScreenPresentable: UITableViewDelegable, UITableViewDataSourceable 
 // MARK: - HomeScreen Routable
 protocol HomeScreenRoutable {
     func toSearchScreen(delegate: (any SearchCityDelegate)?)
+    func toMapScreen(delegate: (any MapScreenDelegate)?)
 }
 
 // MARK: - HomeScreen Interactive

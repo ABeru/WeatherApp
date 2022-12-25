@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 // MARK: - Home Screen Presenter
 final class HomeScreenPresenter<View, Router, Interactor>: HomeScreenPresentable
@@ -18,7 +19,6 @@ final class HomeScreenPresenter<View, Router, Interactor>: HomeScreenPresentable
     private unowned let view: View
     private let router: Router
     private let interactor: Interactor
-    private let parameters: HomeScreenParameters
     
     private var tableViewSections: [Section] = []
     
@@ -28,26 +28,26 @@ final class HomeScreenPresenter<View, Router, Interactor>: HomeScreenPresentable
     private var lat: Double = 0.0
     private var lon: Double = 0.0
     
+    private let locationUpdateMinTimeInterval: TimeInterval = 1
+    private var locationUpdateLastDate: Date?
+    
     private var city = ""
 
     // MARK: Initializers
     init(
         view: View,
         router: Router,
-        interactor: Interactor,
-        parameters: HomeScreenParameters
+        interactor: Interactor
     ) {
         self.view = view
         self.router = router
         self.interactor = interactor
-        self.parameters = parameters
     }
 
     // MARK: Presentable
     func viewDidLoad() {
-        lat = parameters.lat
-        lon = parameters.lon
-        fetchForecast()
+        requestLocationAuthorisation()
+        addLocationObservers()
     }
     
     func updateCity(lat: Double, lon: Double) {
@@ -191,6 +191,11 @@ final class HomeScreenPresenter<View, Router, Interactor>: HomeScreenPresentable
                         guard let self else { return }
                         
                         self.router.toSearchScreen(delegate: self.view as? SearchCityDelegate)
+                    },
+                    pinButtonHandler: { [weak self] in
+                        guard let self else { return }
+                        
+                        self.router.toMapScreen(delegate: self.view as? MapScreenDelegate)
                     }
                 )
             ]
@@ -229,5 +234,47 @@ final class HomeScreenPresenter<View, Router, Interactor>: HomeScreenPresentable
                 
             }()
         )
+    }
+    
+    // MARK: Location Service
+    private func requestLocationAuthorisation() {
+        LocationService.shared.requestAuthorization(completion: { [weak self] isGranted in
+            guard let self = self else { return }
+            
+            if !isGranted {
+                self.view.presentAlert(parameters: .init(title: "Error", message: "App needs locations"))
+            }
+        })
+    }
+    
+    // MARK: Location
+    private func addLocationObservers() {
+        NotificationCenter.default.addObserver(
+            forName: LocationService.didChangeLocationNotification,
+            object: nil,
+            queue: .main,
+            using: { [weak self] _ in
+                guard let self = self else { return }
+                self.updateLocation()
+            }
+        )
+    }
+    
+    private func updateLocation() {
+        if let locationUpdateLastDate {
+            let nowDate: Date = .init()
+            guard nowDate.timeIntervalSince(locationUpdateLastDate) > locationUpdateMinTimeInterval else { return }
+            self.locationUpdateLastDate = nowDate
+        } else {
+            locationUpdateLastDate = .init()
+        }
+        
+        guard let coordinate: CLLocationCoordinate2D = LocationService.shared.location?.coordinate else { return }
+        
+        lat = coordinate.latitude
+        lon = coordinate.longitude
+        
+        fetchForecast()
+        
     }
 }
